@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "de.jensklingenberg.jetpackcomposeplayground"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -58,7 +58,7 @@ val compose_version = libs.versions.compose.version.get()
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("androidx.activity:activity-compose:1.9.2")
+    implementation("androidx.activity:activity-compose:1.10.0")
     implementation("androidx.appcompat:appcompat:1.7.0")
     implementation("androidx.compose.animation:animation-core:$compose_version")
     implementation("androidx.compose.animation:animation:$compose_version")
@@ -75,14 +75,14 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling:$compose_version")
     implementation("androidx.compose.ui:ui-tooling:$compose_version")
     implementation("androidx.compose.ui:ui:$compose_version")
-    implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.5")
+    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.compose.ui:ui-viewbinding:$compose_version")
     implementation("androidx.compose.ui:ui-text:$compose_version")
     implementation("androidx.compose.ui:ui-util:$compose_version")
     implementation("androidx.compose.ui:ui:$compose_version")
-    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
