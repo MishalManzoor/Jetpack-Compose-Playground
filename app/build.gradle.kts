@@ -49,6 +49,7 @@ tasks.withType<KotlinCompile>().configureEach {
             "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination=${project.buildDir.absolutePath}/compose_compiler"
         )
         freeCompilerArgs += listOf(
+
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=${project.buildDir.absolutePath}/compose_compiler"
         )
@@ -97,6 +98,10 @@ dependencies {
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
     androidTestImplementation("org.mockito:mockito-core:5.12.0")
     debugImplementation("androidx.compose.ui:ui-test-manifest:$compose_version")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
 
     androidTestImplementation("com.adevinta.android:barista:4.3.0") {
         exclude(group = "org.jetbrains.kotlin")

@@ -16,6 +16,7 @@
 
 package de.jensklingenberg.jetpackcomposeplayground.mysamples.demo
 
+import de.jensklingenberg.jetpackcomposeplayground.mysamples.github.UsageOfViewModel.demo.userProfileDemo
 import de.jensklingenberg.jetpackcomposeplayground.mysamples.github.activity.ActivityDemos
 import de.jensklingenberg.jetpackcomposeplayground.mysamples.github.animation.AnimationDemos
 import de.jensklingenberg.jetpackcomposeplayground.mysamples.github.foundation.FoundationDemos
@@ -39,6 +40,7 @@ val AllDemosCategory = DemoCategory(
         GeneralDemos,
         OtherDemos,
         ActivityDemos,
-        UIDemos
+        UIDemos,
+        userProfileDemo
     )
 )
